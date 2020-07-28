@@ -14,7 +14,7 @@ _(Assuming you've already created an account with Heroku)_
 
 ##### 1. Clone the repo
 ```bash
-$  website
+$ cd website
 ```
 
 ##### 2. Login to Heroku
