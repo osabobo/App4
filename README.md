@@ -14,7 +14,7 @@ _(Assuming you've already created an account with Heroku)_
 
 ##### 1. Clone the repo
 ```bash
-$  cd Flask_sample
+$  website
 ```
 
 ##### 2. Login to Heroku
@@ -29,7 +29,7 @@ $ heroku create
 
 ##### 4. Set the Python Path
 ```bash
-$ heroku config:set PYTHONPATH=Flask_sample
+$ heroku config:set PYTHONPATH=website
 
 
 
@@ -48,6 +48,6 @@ _(You need to have installed Postgres locally to run the app. For a simpler sqli
 # Install dependencies
 $ pip install -r requirements.txt
 # Run the app
-$ python Flask_sample/app.py
+$ python website/app.py
 # Now point your browser to localhost:5000
 ```
