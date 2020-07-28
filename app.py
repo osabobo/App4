@@ -1,13 +1,11 @@
 from flask import Flask, request,render_template,url_for
 import numpy as np
-import pickle
 import pandas as pd
-from sklearn.feature_extraction.text import TfidfVectorizer
 import joblib
 
 app=Flask(__name__)   #first step
 pickle_in = open("logit.pkl","rb")
-classifier=pickle.load(pickle_in)#step 2
+classifier=joblib.load(pickle_in)#step 2
 cv_model = open('vectorizer.pkl', 'rb')
 cv = joblib.load(cv_model)
 #logit=joblib.load('./logit1.pkl')
